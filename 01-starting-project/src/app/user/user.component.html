@@ -1,10 +1,10 @@
 <div>
   <button (click)="onSelectUser()">
     <!-- Control + Space in () to get ton of options -->
-    <img [src]="imagePath" [alt]="name" />
+    <img [src]="imagePath" [alt]="user.name" />
     <!-- (Not considered the best practice to keep dynamic template code like this, instead keep it in another file using JS TS feature) -->
     <!--  Property binding -->
-    <span>{{ name }}</span>
+    <span>{{ user.name }}</span>
     <!--  Outputting Dynamic Content with String Interpolation -->
   </button>
 </div>
