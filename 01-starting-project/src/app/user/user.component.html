@@ -1,4 +1,4 @@
-<div>
+<app-card>
   <button [class.active]="selected" (click)="onSelectUser()">
     <!-- Control + Space in () to get ton of options -->
     <img [src]="imagePath" [alt]="user.name" />
@@ -7,4 +7,4 @@
     <span>{{ user.name }}</span>
     <!--  Outputting Dynamic Content with String Interpolation -->
   </button>
-</div>
+</app-card>
