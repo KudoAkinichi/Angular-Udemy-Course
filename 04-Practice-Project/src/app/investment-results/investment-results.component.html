@@ -1,4 +1,4 @@
-@if (!results) {
+@if (!results()) {
 <p class="center">Please enter some values and press "Calculate".</p>
 <!-- <p *ngIf="!results">Please enter some values and press "Calculate".</p> -->
 <!-- In older angular version the above one ng module -->
@@ -14,7 +14,7 @@
     </tr>
   </thead>
   <tbody>
-    @for (result of results; track result.year) {
+    @for (result of results(); track result.year) {
     <tr>
       <!-- below is String interpolation syntax -->
       <td>{{ result.year }}</td>
